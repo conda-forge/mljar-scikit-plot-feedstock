@@ -1,5 +1,5 @@
 {% set name = "mljar-scikit-plot" %}
-{% set version = "0.3.11" %}
+{% set version = "0.3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3b95222afba98ca1aa2d6f52b10a8cf0a9cfc0e87abeba6ee885b634f6944fbb
+  sha256: 4a093840bb90e2e31ca49ba22791cd88e74a0b0ff953441cfa9900fdb58c4964
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
